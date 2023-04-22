@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1681926946700-73c10c72ef15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4M3x8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    border: 5px solid rgb(49, 149, 22);
+    border-style: outset ;
+    width: 450px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    padding-left: 55px;
+    font-family: 'sofia';
+    box-shadow: 3px 5px 10px rgb(29, 210, 84);
+}
+input{
+    border: 2px solid black;
+    border-radius: 4px;
+}
+input:hover{
+    background-color:rgb(54, 109, 5);
+}
+h1{
+    font-style: sofia;
+    text-decoration: underline ;
+}
+h3{
+    font-size: 25px;
+}
+label{
+    font-size:18px;
+}
+h4{
+    font-size: 16px;
+}
+.btn{
+    margin-left: 100px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(130, 218, 238);
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: lightgreen;
+    text-decoration: underline;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Enter your details :-</h1>
+            <form>
+                <h3>Name :</h3>
+                <label for="fname">First Name-  </label>
+                <input required type="text" id="fname" name="first_name" >
+                <br>
+                <br>
+                <label for="lname">Last Name-  </label>
+                <input required type="text" id="lname" name="last_name" >
+                <h3>Address :</h3>
+                <label for="state">State-  </label>
+                <input required type="text" id="state" name="state" >
+                <br>
+                <br>
+                <label for="city">City-  </label>
+                <input required type="text" id="city" name="city" >
+                <br>
+                <br>
+                <label for="Locality">Locality-  </label>
+                <input required type="text" id="Locality" name="Locality" >
+                <br>
+                <br>
+                <label for="pin">Pincode-  </label>
+                <input required type="number" id="pin" name="pincode" >
+                <h3>Contact Details : </h3>
+                <label>Mobile Number- :</label>
+                <input required type="number" id="num" name="contact_number" ><br><br>
+                <label>Email- </label>
+                <input required type="email" id="mail" name="email" >
+                <h3>Rating  </h3>
+                <h4>Quality of Product :</h4>
+                <input type="radio" name="quality_of_products_received_rating" value="Excellent" id="excellent">
+                <label for="excellent">Excellent</label>
+                <input type="radio" name="quality_of_products_received_rating" value="Good" id="good">
+                <label for="good">Good</label>
+                <input type="radio" name="quality_of_products_received_rating" value="Bad" id="bad">
+                <label for="bad">Bad</label>
+                <h4>Value for money :</h4>
+                <input type="radio" name="value_for_money_rating" value="Excellent" id="excellent">
+                <label for="excellent">Excellent</label>
+                <input type="radio" name="value_for_money_rating" value="Good" id="good">
+                <label for="good">Good</label>
+                <input type="radio" name="value_for_money_rating" value="Bad" id="bad">
+                <label for="bad">Bad</label>
+                <h4>Delivery :</h4>
+                <input type="radio" name="delivery_rating" value="Excellent" id="excellent">
+                <label for="excellent">Excellent</label>
+                <input type="radio" name="delivery_rating" value="Good" id="good">
+                <label for="good">Good</label>
+                <input type="radio" name="delivery_rating" value="Bad" id="bad">
+                <label for="bad">Bad</label>
+                <br>
+                <br>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
